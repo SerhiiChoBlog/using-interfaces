@@ -8,7 +8,7 @@ use App\Exceptions\SmsServiceException;
 use Throwable;
 use Twilio\Rest\Client;
 
-class TwilioSmsService
+class TwilioSmsService implements SmsService
 {
     public function sendMessage(string $phone, string $message): void
     {
